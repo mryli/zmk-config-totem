@@ -1,30 +1,48 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="/docs/images/TOTEM_logo_dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="/docs/images/TOTEM_logo_bright.svg">
-  <img alt="TOTEM logo font" src="/docs/images/TOTEM_logo_bright.svg">
-</picture>
+# Totem Keyboard - ZMK Firmware Configuration
 
-# ZMK CONFIG FOR THE TOTEM SPLIT KEYBOARD
+Custom ZMK firmware configuration for the [GEIST Totem](https://github.com/GEIGEIGEIST/TOTEM) split keyboard with Seeeduino XIAO BLE controllers.
 
-[Here](https://github.com/GEIGEIGEIST/totem) you can find the hardware files and build guide.\
-[Here](https://github.com/GEIGEIGEIST/qmk-config-totem) you can find the QMK config for the TOTEM.
+## Features
 
-TOTEM is a 38 key column-staggered split keyboard running [ZMK](https://zmk.dev/) or [QMK](https://docs.qmk.fm/). It's meant to be used with a SEEED XIAO BLE or RP2040.
+- **Mouse Support** - Full pointer device support with mouse movement, clicking, and scrolling
+- **ZMK Studio** - Live keymap editing without reflashing (with locking enabled for security)
+- **NKRO** - N-key rollover enabled for better gaming and typing performance
+- **4 Layers** - Base (QWERTY), Symbol, Navigation, and Adjust layers
+- **Sticky Keys** - One-shot modifiers for ergonomic modifier usage
+- **Caps Word** - Smart capitalization mode
+- **Bluetooth** - Multi-device pairing support
 
+## Layout Overview
 
-![TOTEM layout](/docs/images/TOTEM_layout.svg)
+- **Base Layer**: Standard QWERTY layout
+- **Symbol Layer**: Brackets, operators, and special characters (activated via left thumb)
+- **Navigation Layer**: Arrow keys, mouse controls, and number pad (activated via right thumb)  
+- **Adjust Layer**: Media controls, Bluetooth settings, and function keys (both thumbs)
 
+## Customizing the Keymap
 
+1. Edit the `config/totem.keymap` file
+   - Find available keycodes in the [ZMK documentation](https://zmk.dev/docs/keymaps/list-of-keycodes)
+2. Commit and push your changes to GitHub
+3. GitHub Actions will automatically build the firmware
+4. Download the `firmware.zip` artifact from the Actions tab
 
-## HOW TO USE
+## Flashing Instructions
 
-- fork this repo
-- `git clone` your repo, to create a local copy on your PC (you can use the [command line](https://www.atlassian.com/git/tutorials) or [github desktop](https://desktop.github.com/))
-- adjust the totem.keymap file (find all the keycodes on [the zmk docs pages](https://zmk.dev/docs/codes/))
-- `git push` your repo to your fork
-- on the GitHub page of your fork navigate to "Actions"
-- scroll down and unzip the `firmware.zip` archive that contains the latest firmware
-- connect the left half of the TOTEM to your PC, press reset twice
-- the keyboard should now appear as a mass storage device
-- drag'n'drop the `totem_left-seeeduino_xiao_ble-zmk.uf2` file from the archive onto the storage device
-- repeat this process with the right half and the `totem_right-seeeduino_xiao_ble-zmk.uf2` file.
+### Left Half
+1. Connect the left half of the keyboard to your computer via USB
+2. Press the reset button twice quickly to enter bootloader mode
+3. The keyboard will appear as a USB mass storage device
+4. Drag and drop `totem_left-seeeduino_xiao_ble-zmk.uf2` onto the drive
+5. The keyboard will automatically reboot with the new firmware
+
+### Right Half
+1. Repeat the same process with the right half
+2. Use the `totem_right-seeeduino_xiao_ble-zmk.uf2` file
+
+### Troubleshooting
+If you encounter any issues, flash the settings reset firmware first, then flash the normal firmware again.
+
+## ZMK Studio
+
+With ZMK Studio enabled, you can edit your keymap in real-time using the [ZMK Studio web interface](https://zmk.studio) without needing to reflash the firmware.
