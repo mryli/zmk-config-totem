@@ -76,7 +76,7 @@
         // Bottom row has tab, hash, pipe, star, minus, plus, caret, backslash, dollar, exclamaion, percent, grave
         Sym {
             label = "Sym";
-            bindings
+            bindings = >
                      &kp LT     &kp LBKT  &kp LBRC  &kp LPAR   &kp AMPS         &kp AT     &kp N7         &kp N8    &kp N9     &kp GT
                      &sk LSHFT  &sk LALT  &sk LGUI  &sk LCTRL  &kp EQUAL        &kp TILDE  &kp N4         &kp N5    &kp N6     &none
             &swapper &kp HASH   &kp PIPE  &kp STAR  &kp MINUS  &kp PLUS         &kp CARET  &kp N1         &kp N2    &kp N3     &kp PRCNT  &kp GRAVE
