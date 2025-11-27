@@ -31,6 +31,15 @@
 };
 
 / {
+    behaviors {
+        swapper: swapper {
+            compatible = "zmk,behavior-smart-toggle";
+            #binding-cells = <0>;
+            bindings = <&kp LALT>, <&kp TAB>;
+            ignored-key-positions = <1>;
+        };
+    };
+
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
@@ -68,10 +77,10 @@
         Sym {
             label = "Sym";
             bindings = <
-                          &kp LT     &kp LBKT  &kp LBRC  &kp LPAR   &kp AMPS         &kp AT     &kp  RPAR      &kp  RBRC    &kp RBKT  &kp GT
-                          &sk LSHFT  &sk LALT  &sk LGUI  &sk LCTRL  &kp EQUAL        &kp TILDE  &msc SCRL_DOWN &msc SCRL_UP &none     &none
-            &kp LG(Z)     &kp HASH   &kp PIPE  &kp STAR  &kp MINUS  &kp PLUS         &kp CARET  &kp  BSLH      &kp  DLLR    &kp EXCL  &kp PRCNT  &kp GRAVE
-                                               &kp DEL   &none      &none            &kp SPACE  &mo  Nav       &kp  LG(RET)
+                                    &kp LT     &kp LBKT  &kp LBRC  &kp LPAR   &kp AMPS         &kp AT     &kp N7         &kp N8    &kp N9     &kp GT
+                                    &sk LSHFT  &sk LALT  &sk LGUI  &sk LCTRL  &kp EQUAL        &kp TILDE  &kp N4         &kp N5    &kp N6     &none
+            <&swapper &kp LS(TAB)>  &kp HASH   &kp PIPE  &kp STAR  &kp MINUS  &kp PLUS         &kp CARET  &kp N1         &kp N2    &kp N3     &kp PRCNT  &kp GRAVE
+                                                         &kp DEL   &none      &none            &kp SPACE  &mo  Nav       &kp N0
             >;
         };
 
@@ -82,10 +91,10 @@
         Nav {
             label = "Nav";
             bindings = <
-                    &kp LSHFT      &mkp RCLK      &mmv MOVE_UP   &mkp LCLK       &none                &kp DEL  &sk RCTRL  &sk RGUI  &sk RALT   &sk RSHFT
-                    &msc SCRL_LEFT &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &msc SCRL_RIGHT      &kp LEFT &kp DOWN   &kp UP    &kp RIGHT  &kp UNDER
-            &kp TAB &kp N1         &kp N2         &kp N3         &kp N4          &kp N5               &kp N6   &kp N7     &kp N8    &kp N9     &kp N0     &kp MINUS
-                                                  &kp RGUI       &mo Sym         &kp RALT             &none    &none      &none
+                                    &kp LSHFT      &mkp RCLK      &mmv MOVE_UP   &mkp LCLK       &none                &kp DEL  &sk RCTRL  &sk RGUI  &sk RALT   &sk RSHFT
+                                    &msc SCRL_LEFT &kp LEFT       &kp UP         &kp RIGHT       &msc SCRL_RIGHT      &kp LEFT &kp DOWN   &kp UP    &kp RIGHT  &kp UNDER
+            <&swapper &kp LS(TAB)>  &kp N1         &kp N2         &kp DOWN       &kp N4          &kp N5               &kp N6   &kp N7     &kp N8    &kp N9     &kp N0     &kp MINUS
+                                                                  &kp RGUI       &mo Sym         &kp RALT             &none    &none      &none
             >;
         };
 
