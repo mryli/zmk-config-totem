@@ -3,7 +3,7 @@ manifest:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
     - name: zmk-smart-toggle
-      url-base: https://github.com/caksoylar/zmk-smart-toggle.git  
+      url-base: https://github.com/caksoylar
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
@@ -14,6 +14,6 @@ manifest:
     - name: zmk-smart-toggle
       remote: zmk-smart-toggle
       revision: main
-      import: zephyr/module.yml
+#      import: zephyr/module.yml
   self:
     path: config
