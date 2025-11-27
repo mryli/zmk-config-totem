@@ -14,5 +14,6 @@ manifest:
     - name: zmk-smart-toggle
       remote: zmk-smart-toggle
       revision: main
+      import: zephyr/module.yml
   self:
     path: config
