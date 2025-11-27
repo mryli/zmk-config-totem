@@ -2,6 +2,8 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: zmk-smart-toggle
+      url-base: https://github.com/alice      
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
@@ -10,7 +12,7 @@ manifest:
       revision: main
       import: app/west.yml
     - name: zmk-smart-toggle
-      remote: https://github.com/caksoylar/zmk-smart-toggle.git
+      remote: zmk-smart-toggle
       revision: main
   self:
     path: config
