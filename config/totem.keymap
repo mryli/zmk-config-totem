@@ -78,10 +78,10 @@
         Sym {
             label = "Sym";
             bindings = <
-                        &kp EXCL   &kp AT    &kp POUND &kp DLLR   &kp PRCNT        &kp LT     &kp N7         &kp N8    &kp N9     &kp GT
-                        &sk LSHFT  &sk LCTRL &sk LALT  &sk LGUI   &kp EQUAL        &kp TILDE  &kp N4         &kp N5    &kp N6     &none
-            &LG(SPACE)  &kp HASH   &kp PIPE  &kp STAR  &kp MINUS  &kp PLUS         &kp CARET  &kp N1         &kp N2    &kp N3     &kp PRCNT  &kp GRAVE
-                                             &kp DEL   &none      &none            &kp SPACE  &mo Nav        &kp N0
+                           &kp EXCL   &kp AT    &kp POUND &kp DLLR   &kp PRCNT        &kp LT     &kp N7         &kp N8    &kp N9     &kp GT
+                           &sk LSHFT  &sk LCTRL &sk LALT  &sk LGUI   &kp EQUAL        &kp TILDE  &kp N4         &kp N5    &kp N6     &none
+            &kp LG(SPACE)  &kp HASH   &kp PIPE  &kp STAR  &kp MINUS  &kp PLUS         &kp CARET  &kp N1         &kp N2    &kp N3     &kp PRCNT  &kp GRAVE
+                                                &kp DEL   &none      &none            &kp SPACE  &mo Nav        &kp N0
             >;
         };
 
