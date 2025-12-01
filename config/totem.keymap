@@ -36,7 +36,7 @@
             compatible = "zmk,behavior-smart-toggle";
             #binding-cells = <0>;
             bindings = <&kp LGUI>, <&kp TAB>;
-//            ignored-key-positions = <1>;
+            ignored-key-positions = <2 11 12 13>;
         };
 
     };
@@ -87,7 +87,7 @@
 
         // Navigation layer. Arrow keys on home row, mouse movement and clicking/scrolling on the left hand
         // Underscore lives here to be shiftable from the symbol layer
-        // Extra modifiers on the top right row, and number pad on the bottom row
+        // Extra modifiers on the top right row, and number pad on the bottom row 
 
         Nav {
             label = "Nav";
