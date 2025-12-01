@@ -78,10 +78,10 @@
         Sym {
             label = "Sym";
             bindings = <
-                        &kp LT     &kp LBKT  &kp LBRC  &kp LPAR   &kp AMPS         &kp AT     &kp N7         &kp N8    &kp N9     &kp GT
-                        &sk LSHFT  &sk LALT  &sk LGUI  &sk LCTRL  &kp EQUAL        &kp TILDE  &kp N4         &kp N5    &kp N6     &none
-            &swapper    &kp HASH   &kp PIPE  &kp STAR  &kp MINUS  &kp PLUS         &kp CARET  &kp N1         &kp N2    &kp N3     &kp PRCNT  &kp GRAVE
-                                          &kp DEL   &none      &none            &kp SPACE  &mo  Nav       &kp N0
+                        &kp EXCL   &kp AT    &kp POUND &kp DLLR   &kp PRCNT        &kp LT     &kp N7         &kp N8    &kp N9     &kp GT
+                        &sk LSHFT  &sk LCTRL &sk LALT  &sk LGUI   &kp EQUAL        &kp TILDE  &kp N4         &kp N5    &kp N6     &none
+            &LG(SPACE)  &kp HASH   &kp PIPE  &kp STAR  &kp MINUS  &kp PLUS         &kp CARET  &kp N1         &kp N2    &kp N3     &kp PRCNT  &kp GRAVE
+                                             &kp DEL   &none      &none            &kp SPACE  &mo Nav        &kp N0
             >;
         };
 
@@ -92,10 +92,10 @@
         Nav {
             label = "Nav";
             bindings = <
-                      &kp LSHFT      &kp LEFT       &kp UP        &kp RIGHT      &none              &kp DEL  &none       &none     &none     &none      
-                      &msc SCRL_LEFT &kp LEFT       &kp DOWN      &kp LA(LC(U))  &kp LA(LC(I))      &kp LEFT &sk RCTRL   &sk RALT  &sk RGUI  &sk RSHFT
-            &swapper  &kp HOME       &kp END        &kp LA(LC(C)) &kp LA(LC(J))  &kp LA(LC(K))      &none    &none       &none     &none     &none      &kp MINUS
-                                                    &kp RGUI       &mo Sym       &kp RALT           &none    &none       &none
+                      &kp LA(LC(E))    &kp HOME    &kp UP        &kp LA(LC(U))  &kp LA(LC(T))      &none    &kp LPAR    &kp RPAR  &kp LBKT  &kp RBKT      
+                      &sk LSHFT        &kp LEFT    &kp DOWN      &kp RIGHT      &kp LA(LC(I))      &none    &sk RCTRL   &sk RALT  &sk RGUI  &sk RSHFT
+            &swapper  &kp END          &kp END     &kp LA(LC(C)) &kp LA(LC(J))  &kp LA(LC(K))      &none    &none       &none     &none     &none      &kp MINUS
+                                                   &kp RGUI      &mo Sym        &kp RALT           &none    &none       &none
             >;
         };
 
