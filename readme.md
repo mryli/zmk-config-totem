@@ -46,3 +46,7 @@ If you encounter any issues, flash the settings reset firmware first, then flash
 ## ZMK Studio
 
 With ZMK Studio enabled, you can edit your keymap in real-time using the [ZMK Studio web interface](https://zmk.studio) without needing to reflash the firmware.
+
+
+## Todo
+
