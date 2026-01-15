@@ -80,7 +80,7 @@
             bindings = <
                            &kp EXCL   &kp AT    &kp POUND &kp DLLR   &kp PRCNT        &kp LT     &kp N7         &kp N8    &kp N9     &kp GT
                            &sk LSHFT  &sk LCTRL &sk LALT  &sk LGUI   &kp EQUAL        &kp TILDE  &kp N4         &kp N5    &kp N6     &none
-            &kp LG(SPACE)  &kp HASH   &kp PIPE  &kp STAR  &kp MINUS  &kp PLUS         &kp CARET  &kp N1         &kp N2    &kp N3     &kp PRCNT  &kp GRAVE
+            &swapper       &kp HASH   &kp PIPE  &kp STAR  &kp MINUS  &kp PLUS         &kp CARET  &kp N1         &kp N2    &kp N3     &kp PRCNT  &kp GRAVE
                                                 &kp DEL   &none      &none            &kp SPACE  &mo Nav        &kp N0
             >;
         };
@@ -92,10 +92,10 @@
         Nav {
             label = "Nav";
             bindings = <
-                      &kp LA(LC(E))    &kp HOME    &kp UP        &kp LA(LC(U))  &kp LA(LC(T))      &none         &kp LPAR    &kp RPAR  &kp LBKT  &kp RBKT      
-                      &sk LSHFT        &kp LEFT    &kp DOWN      &kp RIGHT      &kp LA(LC(I))      &kp LA(LC(X)) &sk RCTRL   &sk RALT  &sk RGUI  &sk RSHFT
-            &swapper  &kp TAB          &kp END     &kp LA(LC(C)) &kp LA(LC(J))  &kp LA(LC(K))      &kp LG(Z)     &kp LG(X)   &kp LG(C) &kp LG(V) &none      &kp MINUS
-                                                   &kp RGUI      &mo Sym        &kp RALT           &none         &none       &none
+                           &kp LA(LC(E))    &kp HOME    &kp UP        &kp LA(LC(U))  &kp LA(LC(T))      &none         &kp LPAR    &kp RPAR  &kp LBKT  &kp RBKT      
+                           &sk LSHFT        &kp LEFT    &kp DOWN      &kp RIGHT      &kp LA(LC(I))      &kp LA(LC(X)) &sk RCTRL   &sk RALT  &sk RGUI  &sk RSHFT
+            &kp LG(SPACE)  &kp TAB          &kp END     &kp LA(LC(C)) &kp LA(LC(J))  &kp LA(LC(K))      &kp LG(Z)     &kp LG(X)   &kp LG(C) &kp LG(V) &none      &kp MINUS
+                                                       &kp RGUI      &mo Sym        &kp RALT           &none         &none       &none
             >;
         };
 
