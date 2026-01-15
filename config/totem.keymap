@@ -118,8 +118,8 @@
             bindings = <
                       &none        &none     &none     &none        &tog Model           &none      &kp N7         &kp N8    &kp N9     &none
                       &kp LSHFT    &kp LCTRL &kp LALT  &kp LGUI     &none                &kp EQUAL  &kp N4         &kp N5    &kp N6     &none 
-            &none     &none        &kp LG(X) &kp LG(C) &kp LG(V)    &none                &kp MINUS  &kp N1         &kp N2    &kp N3     &kp DOT   &none
-                                             &kp DEL   &none        &none                &none      &none          &kp N0
+            &kp ESC   &none        &kp LG(X) &kp LG(C) &kp LG(V)    &none                &kp MINUS  &kp N1         &kp N2    &kp N3     &kp DOT   &none
+                                             &kp BSPC  &none        &none                &none      &none          &kp N0
             >;
         };
     };
