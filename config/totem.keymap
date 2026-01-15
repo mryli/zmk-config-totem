@@ -20,6 +20,7 @@
 #define Sym             1
 #define Nav             2
 #define Adjust          3
+#define Model           4
 
 &sk {
     release-after-ms = <1000>;
@@ -92,10 +93,10 @@
         Nav {
             label = "Nav";
             bindings = <
-                           &kp LA(LC(E))    &kp HOME    &kp UP        &kp LA(LC(U))  &kp LA(LC(T))      &none         &kp LPAR    &kp RPAR  &kp LBKT  &kp RBKT      
-                           &sk LSHFT        &kp LEFT    &kp DOWN      &kp RIGHT      &kp LA(LC(I))      &kp LA(LC(X)) &sk RCTRL   &sk RALT  &sk RGUI  &sk RSHFT
-            &kp LG(SPACE)  &kp TAB          &kp END     &kp LA(LC(C)) &kp LA(LC(J))  &kp LA(LC(K))      &kp LG(Z)     &kp LG(X)   &kp LG(C) &kp LG(V) &none      &kp MINUS
-                                                       &kp RGUI      &mo Sym        &kp RALT            &none         &none       &none
+                           &kp LA(LC(E))    &kp HOME    &kp UP          &kp LA(LC(U))  &kp LA(LC(T))      &none         &kp LPAR    &kp RPAR  &kp LBKT  &kp RBKT      
+                           &sk LSHFT        &kp LEFT    &kp DOWN        &kp RIGHT      &kp LA(LC(I))      &kp LA(LC(X)) &sk RCTRL   &sk RALT  &sk RGUI  &sk RSHFT
+            &kp LG(SPACE)  &kp TAB          &kp END     &kp LA(LC(C))   &kp LA(LC(J))  &kp LA(LC(K))      &kp LG(Z)     &kp LG(X)   &kp LG(C) &kp LG(V) &none      &kp MINUS                                       
+                                                        &kp LA(LC(RET)) &mo Sym        &kp RALT            &none         &none       &none
             >;
         };
 
